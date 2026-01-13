@@ -7,7 +7,7 @@ router = APIRouter(prefix="/search", tags=["Search"])
 
 @router.get("/")
 def semantic_search(
-    q: str,
+    q: str, 
     document_id: str,
     user_id: str = Depends(get_current_user)
 ):
