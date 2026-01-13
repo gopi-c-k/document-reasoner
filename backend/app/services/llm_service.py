@@ -34,7 +34,7 @@ Answer:
 """
 
     response = client.chat.completions.create(
-        model="llama3-70b-8192",  # fast + strong
+        model="openai/gpt-oss-120b",  # fast + strong
         messages=[
             {"role": "user", "content": prompt}
         ],
